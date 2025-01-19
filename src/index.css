@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+@media (max-width: 600px){
+ 
+.sidebar{
+  display: none;
+}
+/* .h1{
+  font-size: 25px;
+}
+.h2{
+  font-size: 12px;
+  padding:0%
+} */
+}
+
+#root{
+  animation: fadeIn 5s;
+
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  25%{
+    opacity: 0.25;
+  }
+  50%{
+    opacity:0.5
+  }
+  75%{
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}

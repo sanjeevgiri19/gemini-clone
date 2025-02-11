@@ -43,7 +43,7 @@ const SideBar = () => {
       <div
         className={`
         fixed top-0 left-0 h-screen bg-[#27292b]/70
-        flex flex-col justify-between pt-6 
+        flex flex-col justify-between pt-4 
         transition-all duration-300 ease-in-out
         ${isExtended ? "w-64" : "w-16"}
         ${isMobile && !isExtended ? "-translate-x-full" : "translate-x-0"}
@@ -58,7 +58,7 @@ const SideBar = () => {
             ></i>
           </div>
 
-          <div className="flex items-center my-4  cursor-pointer text-zinc-400 hover:bg-zinc-700 text-lg py-2  rounded-3xl">
+          <div className="flex items-center my-2  cursor-pointer text-zinc-400 hover:bg-zinc-700 text-lg py-2  rounded-3xl">
             <i className="ri-add-line text-2xl ml-4"></i>
             {isExtended && (
               <div onClick={() => newChat()} className="ml-2 truncate">
@@ -69,7 +69,7 @@ const SideBar = () => {
 
           {isExtended && (
             <div className="text-zinc-400 overflow-y-auto max-h-[calc(100vh-300px)]">
-              <h1 className="text-2xl mb-6 ml-2">Recent</h1>
+              <h1 className="text-2xl mb-4 ml-2">Recent</h1>
               {prevPrompt.map((item, index) => (
                 <div
                   onClick={() => loadSidePrompt(item)}

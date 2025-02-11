@@ -34,16 +34,16 @@ const SideBar = () => {
       {isMobile && !isExtended && (
         <button
           onClick={toggleSidebar}
-          className="fixed  left-4 z-50 text-zinc-400 hover:bg-zinc-700 rounded-full p-2"
+          className="fixed  left-4 z-50 text-zinc-400 hover:bg-zinc-700 rounded-full "
         >
-          <i className="ri-menu-line text-2xl"></i>
+          <i className="ri-menu-line text-xl"></i>
         </button>
       )}
 
       <div
         className={`
         fixed top-0 left-0 h-screen bg-[#282a2c]
-        flex flex-col justify-between p-5
+        flex flex-col justify-between pt-6 
         transition-all duration-300 ease-in-out
         ${isExtended ? "w-64" : "w-16"}
         ${isMobile && !isExtended ? "-translate-x-full" : "translate-x-0"}
@@ -51,13 +51,15 @@ const SideBar = () => {
       `}
       >
         <div className="flex flex-col gap-2">
-          <i
-            onClick={toggleSidebar}
-            className="ri-menu-line cursor-pointer text-zinc-400 hover:bg-zinc-700 rounded-full text-2xl block h-10 pl-2 pt-[5px] font-semibold"
-          ></i>
+          <div className=" ">
+            <i
+              onClick={toggleSidebar}
+              className="ri-menu-line cursor-pointer px-4 text-zinc-400 w-10 ml-3 pl-2  hover:bg-zinc-700 rounded-full text-xl  block h-10  pt-[6px] font-semibold"
+            ></i>
+          </div>
 
-          <div className="flex items-center my-4 cursor-pointer text-zinc-400 hover:bg-zinc-700 text-lg p-2 rounded-3xl">
-            <i className="ri-add-line text-2xl"></i>
+          <div className="flex items-center my-4  cursor-pointer text-zinc-400 hover:bg-zinc-700 text-lg py-2  rounded-3xl">
+            <i className="ri-add-line text-2xl ml-4"></i>
             {isExtended && (
               <div onClick={() => newChat()} className="ml-2 truncate">
                 New Chat
@@ -82,7 +84,7 @@ const SideBar = () => {
           )}
         </div>
 
-        <div className="bottom flex flex-col text-zinc-400 gap-2 mx-1 font-medium">
+        <div className="bottom flex flex-col mb-12 text-zinc-400 gap-2 mx-1 font-medium">
           {["Help", "Activity", "Setting"].map((item, index) => (
             <div
               key={item}

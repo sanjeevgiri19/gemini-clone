@@ -1,6 +1,6 @@
 const TopNav = () => {
   return (
-    <div className="flex justify-between h-14 sm:h-16 z-100 px-2">
+    <div className="flex justify-between mt-2 h-14 sm:h-16 z-100 px-2">
       <h1 className="text-lg sm:text-2xl my-2 ml-12 px-2 sm:px-3 text-zinc-100 tracking-wide hover:bg-zinc-700 rounded-md">
         Gemini
       </h1>

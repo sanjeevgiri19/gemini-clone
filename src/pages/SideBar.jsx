@@ -34,7 +34,7 @@ const SideBar = () => {
       {isMobile && !isExtended && (
         <button
           onClick={toggleSidebar}
-          className="fixed  left-4 z-50 text-zinc-400 hover:bg-zinc-700 rounded-full "
+          className="fixed  left-4 z-50 text-zinc-400 mt-4 hover:bg-zinc-700 rounded-full "
         >
           <i className="ri-menu-line text-xl"></i>
         </button>
@@ -42,7 +42,7 @@ const SideBar = () => {
 
       <div
         className={`
-        fixed top-0 left-0 h-screen bg-[#282a2c]
+        fixed top-0 left-0 h-screen bg-[#27292b]/70
         flex flex-col justify-between pt-6 
         transition-all duration-300 ease-in-out
         ${isExtended ? "w-64" : "w-16"}

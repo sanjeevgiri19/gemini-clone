@@ -1,18 +1,16 @@
 import React from 'react'
-
 const Header = () => {
   return (
-    <div className=' '>
-      <div className="mx-6 ">
-        <h1 className=" text-[80px]  font-bold bg-gradient-to-r from-[#5392f8f8] via-pink-500 to-[#ff5546] text-transparent bg-clip-text leading-tight">
+    <div>
+      <div className="mx-4 sm:mx-6">
+        <h1 className="text-4xl sm:text-6xl md:text-80px font-bold bg-gradient-to-r from-[#5392f8f8] via-pink-500 to-[#ff5546] text-transparent bg-clip-text leading-tight">
           Hello, Dev.
         </h1>
-        <h2 className=" h2 text-3xl font-bold text-zinc-400">
-          Push Gemini to the limits of what Ai can do, powered by GeminiAPI
+        <h2 className="text-sm sm:text-lg md:text-3xl font-bold text-zinc-400">
+          Push Gemini to the limits of what AI can do, powered by GeminiAPI
         </h2>
       </div>
-
-      <div className="flex gap-10 mr-20 mt-24 justify-center relative">
+      {/* <div className="flex gap-10 mr-20 mt-24 justify-center relative">
         <div className="bg-[#282a2c] cursor-pointer  w-52 p-3 text-lg rounded-md h-52">
           <h2 className="text-zinc-300">
             Suggest beautiful places to see on ap upcoming road trip
@@ -37,9 +35,9 @@ const Header = () => {
           </h2>
           <i className="ri-code-s-slash-line  text-zinc-400  absolute bottom-0  p-[2px] bg-[#1f1f1f] rounded-full text-3xl"></i>
         </div>
-      </div>
+      </div> */}
     </div>
   );
-}
+};
 
 export default Header

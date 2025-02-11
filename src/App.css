@@ -11,6 +11,22 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
+pre {
+  background-color: #2d2d2d;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+code {
+  color: #f8f8f2;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+}
+
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }

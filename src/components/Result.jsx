@@ -7,8 +7,8 @@ const Result = () => {
   return (
     <>
       {resultData ? (
-        <div className="flex flex-col gap-3 overflow-y-auto">
-          <div className="flex gap-4 sm:gap-6 items-center">
+        <div className="flex flex-col gap-4 overflow-y-auto">
+          <div className="flex gap-4 sm:gap-6 ">
             <i className="ri-account-circle-fill text-3xl sm:text-4xl text-zinc-400"></i>
             <h2 className="text-lg sm:text-xl font-medium text-zinc-300">
               {recentPrompt}

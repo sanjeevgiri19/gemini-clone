@@ -23,7 +23,7 @@ const MainBoard = () => {
     <div className="bg-[#1f1f1f]  w-screen h-screen overflow-hidden">
       <TopNav />
       <div className="flex justify-center flex-col h-[70%]">
-        <div className="px-4 sm:px-6 flex flex-col gap-3 py-4 mt-10 sm:mt-20 mx-4 sm:mx-32 h-[110%]">
+        <div className="px-4 sm:px-6 flex flex-col gap-3 mb-2 sm:mt-4 mx-4 sm:mx-32 h-[100%] ">
           {!showResult ? <Header /> : <Result />}
         </div>
         <div className="flex flex-col  items-center justify-center">
@@ -44,7 +44,7 @@ const MainBoard = () => {
               ></i>
             )}
           </div>
-          <p className="text-zinc-400 absolute bottom-6 text-xs sm:text-sm">
+          <p className="text-zinc-400 absolute bottom-5 text-xs sm:text-sm">
             Gemini can make mistakes, so double-check it.
           </p>
         </div>
